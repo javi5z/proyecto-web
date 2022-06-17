@@ -1,13 +1,37 @@
-body{
-    background-color: rgb(204, 227, 238);
+body {
+    background-color: rgb(219, 211, 199);
 }
 
-.menu{
-    font-size: 25px;
-    text-align: center;
+div {
+    width: 35%;
+    border-style: solid;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    background-color: #ffffff;
 }
 
-p{
-    font-size: 25px;
+.valores {
+    float: right;
+    color: red;
+}
+
+p {
+    font-size: 60px;
     text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width:800px) {
+    div {
+        display: block;
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .valores {
+        float: right;
+        font-size: 25px;
+    }
 }
