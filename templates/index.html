@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,53 @@
     <link rel="stylesheet" type="text/css" href="static/estilo.css" media="screen" />
     <title>A cuento esta</title>
 </head>
+
 <body>
-    <p>A cuanto esta el</p>
-    <nav class="menu">   
-          Euribor
-          {{ euribor_hoy }}
-          <br>
-          Gasolina 95
-          {{ gasolina95_hoy }}
-          <br>
-          Gasolina 98
-          {{ gasolina98_hoy }}
-          <br>
-          Oro
-          VALOR
-          <br>
-          Bitcoin
-          VALOR
-          <br>
-          IPC
-          VALOR
-      </nav>
-      
+    <p>Valor Diario [
+        <script>var fecha = new Date();
+            document.write(fecha.getDate() + "/" + (fecha.getMonth() + 1) + "/" + fecha.getFullYear());</script>]
+    </p>
+    <div>
+        Euribor
+        <label class="valores">
+            {{ euribor_hoy }}
+        </label>
+    </div>
+    <br>
+    <div>
+        Gasolina 95
+        <label class="valores">
+            {{ gasolina95_hoy }}
+        </label>
+    </div>
+    <br>
+    <div>
+        Gasolina 98
+        <label class="valores">
+            {{ gasolina98_hoy }}
+        </label>
+    </div>
+    <br>
+    <div>
+        Diésel
+        <label class="valores">
+            {{ diesel_hoy }}
+        </label>
+    </div>
+    <br>
+    <div>
+        Oro
+        <label class="valores">
+            {{ oro_hoy }}
+        </label>
+    </div>
+    <br>
+    <div>
+        Bitcoin
+        <label class="valores">
+            {{btc_hoy }} $
+        </label>
+    </div>
 </body>
+
 </html>
